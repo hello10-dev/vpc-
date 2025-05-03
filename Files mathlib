@@ -1,0 +1,56 @@
+//Mymathlib.cs
+using System;
+namespace mymathlib
+{
+    public class method1
+    {
+        public static long add(long a, long b)
+    {
+        return(a+b);
+    }
+    public static long mul(long a, long b)
+    {
+        return (a*b);
+    }
+    }
+    
+}
+
+// MyMathApp.cs
+
+using System;
+using mymathlib;
+
+class MyMathApp
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Calling Method from mymathlib");
+
+        if(args.Length != 2)
+        {
+            Console.WriteLine("Usage: MyMathApp <num1> <num2>");
+            return;
+        }
+
+        long num1 = long.Parse(args[0]);
+        long num2 = long.Parse(args[1]);
+
+        long add = method1.add(num1,num2);
+        long mul = method1.mul(num1,num2);
+
+        Console.WriteLine(" {0} + {1} = {2}", num1, num2, add);
+        Console.WriteLine(" {0} * {1} = {2}", num1, num2, mul);
+    }
+}
+
+run :-
+csc /target:library /out:mymathlib.dll mymathlib.cs 
+csc /reference:mymathlib.dll MyMathApp.cs 
+.\MyMathApp.exe 20 15
+
+output
+Calling Method from mymathlib 
+20 + 15= 35 
+20 * 15= 300.
+
