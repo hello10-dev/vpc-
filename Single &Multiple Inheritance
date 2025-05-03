@@ -1,0 +1,52 @@
+// Single Inheritance
+// using System;
+
+// class emp
+// {
+//     public float sal = 40000;
+// }
+// class prog : emp
+// {
+//     public float bonus = 10000;
+// }
+// class sinormul
+// {
+//     public static void Main(string[] args)
+//     {
+//         prog p1 = new prog();
+//         Console.WriteLine("Salray: "+ p1.sal);
+//         Console.WriteLine("Bonus: "+ p1.bonus);
+//         Console.WriteLine("Total Salary: "+ (p1.sal+p1.bonus));
+//     }
+// }
+
+
+
+// Multiple Inheritance
+using System;
+
+class A
+{
+    public float sal = 40000;
+}
+
+class B : A
+{
+    public float bonus = 10000;
+}
+class C : B
+{
+    public int id = 143;
+}
+
+class sinormul
+{
+    public static void Main(string[] args)
+    {
+        C c1 = new C();
+        Console.WriteLine("Salaray: "+ c1.sal);
+        Console.WriteLine("Bonus: "+c1.bonus);
+        Console.WriteLine("ID :"+c1.id);
+        Console.WriteLine("Total Salary: "+ (c1.sal+c1.bonus));
+    }
+}
