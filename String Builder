@@ -1,0 +1,26 @@
+using System;
+using System.Text;
+using System.Collections;
+
+class stringBuilder
+{
+    public static void concat(String s1)
+    {
+        String st = "To C#.Net Lab";
+        s1 = String.Concat(s1,st);
+    }
+    public static void concat2(StringBuilder s2)
+    {
+        s2.Append(" To C#.Net Lab");
+    }
+    public static void Main(string[] args)
+    {
+        String s1 = "Welcome ";
+        concat(s1);
+        Console.WriteLine("Using String Class: " + s1);
+        StringBuilder s2 = new StringBuilder("Welcome");
+        concat2(s2);
+        Console.WriteLine("Using StringBuilder Class: " + s2);
+    }
+
+}
