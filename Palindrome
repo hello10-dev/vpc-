@@ -1,0 +1,25 @@
+using System;
+class palindrome
+{
+    public static void Main(string[] args)
+    {
+        int n = int.Parse(Console.ReadLine());
+        int x = n;
+        int dig;
+        int rev = 0;
+
+        while(n>0)
+        {
+            dig = n % 10;
+            rev = (rev*10)+ dig;
+            n = n/10;
+        }
+        if(rev == x)
+        {
+            Console.WriteLine(x + " is a Palindrome number");
+        }
+        else{
+            Console.WriteLine(x + " is not a palindrome number");
+        }
+    }
+}
