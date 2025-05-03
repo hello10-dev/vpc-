@@ -1,5 +1,5 @@
 dotnet --version
-dotnet new webapp -o MyWebApp --no-https -f net6.0
+dotnet new webapp -o MyWebApp --no-https -f net9.0
 
 table code -
 
