@@ -1,0 +1,33 @@
+dotnet new winforms -o first
+
+Program.cs :-
+
+using System.Windows.Forms;
+using System.Drawing;
+namespace task9
+{
+    public class myForm : Form
+    {
+        public myForm()
+        {
+            InitComponents();
+        }
+        public void InitComponents()
+        {
+            ColorDialog dl = new ColorDialog();
+            if(dl.ShowDialog() == DialogResult.OK)
+            {
+                this.BackColor = dl.Color;
+            }
+        }
+        static void Main()
+    {
+        // To customize application configuration such as set high DPI settings or default font,
+        // see https://aka.ms/applicationconfiguration.
+        ApplicationConfiguration.Initialize();
+        Application.Run(new myForm());
+    }    
+    }
+}
+
+dotnet run --project first
