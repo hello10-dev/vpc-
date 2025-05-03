@@ -1,0 +1,30 @@
+using System;
+
+class emp
+{
+    int id;
+    string name;
+    float sal;
+    public void insert(int id, string name, float sal)
+    {
+        this.id =id;
+        this.name = name;
+        this.sal= sal;
+    }
+    public void display(int id, string name, float sal)
+    {
+        Console.WriteLine("ID: "+ id);
+        Console.WriteLine("Name: "+ name);
+        Console.WriteLine("Salary: "+ sal);
+    }
+
+    public static void Main(string[] args)
+    {
+        int id  = int.Parse(Console.ReadLine());
+        string name = Console.ReadLine();
+        float sal = float.Parse(Console.ReadLine());
+        emp ob = new emp();
+        ob.insert(id, name, sal);
+        ob.display(id, name,sal);
+    }
+}
