@@ -1,0 +1,35 @@
+inside button fucntion
+
+if ((string.IsNullOrEmpty(textBox1.Text)))
+            {
+
+                MessageBox.Show("Please enter your Name");
+                return;
+            }
+            if ((string.IsNullOrEmpty(textBox2.Text)))
+            {
+                MessageBox.Show("Please enter Your E-Mail address");
+                return;
+            }
+
+
+            if (!(textBox2.Text).Contains("@"))
+            {
+
+                MessageBox.Show("Please enter valid E-Mail");
+                return;
+            }
+            if ((string.IsNullOrEmpty(textBox3.Text)))
+            {
+
+                MessageBox.Show("Please enter your Password");
+                return;
+            }
+            if ((textBox3.Text).Length < 8)
+            {
+
+                MessageBox.Show("Password must be atleast 8 characters long");
+                return;
+            }
+            MessageBox.Show("Form Submitted Successfully");
+
