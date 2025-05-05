@@ -47,7 +47,7 @@ class MyMathApp
 run :-
 csc /target:library /out:mymathlib.dll mymathlib.cs 
 csc /reference:mymathlib.dll MyMathApp.cs 
-.\MyMathApp.exe 20 15
+./MyMathApp.exe 20 15
 
 output
 Calling Method from mymathlib 
