@@ -70,3 +70,4 @@ class test
         e1.insert(a, b, c);
         e1.display();
     }
+}
