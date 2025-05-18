@@ -1,28 +1,30 @@
-// Single Inheritance
-// using System;
+ Single Inheritance: 
 
-// class emp
-// {
-//     public float sal = 40000;
-// }
-// class prog : emp
-// {
-//     public float bonus = 10000;
-// }
-// class sinormul
-// {
-//     public static void Main(string[] args)
-//     {
-//         prog p1 = new prog();
-//         Console.WriteLine("Salray: "+ p1.sal);
-//         Console.WriteLine("Bonus: "+ p1.bonus);
-//         Console.WriteLine("Total Salary: "+ (p1.sal+p1.bonus));
-//     }
-// }
+ using System;
+
+ class emp
+ {
+     public float sal = 40000;
+ }
+ class prog : emp
+ {
+     public float bonus = 10000;
+ }
+ class sinormul
+ {
+     public static void Main(string[] args)
+     {
+         prog p1 = new prog();
+         Console.WriteLine("Salray: "+ p1.sal);
+         Console.WriteLine("Bonus: "+ p1.bonus);
+         Console.WriteLine("Total Salary: "+ (p1.sal+p1.bonus));
+     }
+ }
 
 
 
-// Multiple Inheritance
+// Multiple Inheritance :
+
 using System;
 
 class A
