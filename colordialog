@@ -4,7 +4,7 @@ Program.cs :-
 
 using System.Windows.Forms;
 using System.Drawing;
-namespace task9
+namespace first
 {
     public class myForm : Form
     {
